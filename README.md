@@ -2,7 +2,7 @@
 
 This is a semester project for the CS 5805 Machine Learning course at Virginia Tech.
 
-The goal of this project is to develop and evaluate machine learning models to predict the direction (up or down) of daily stock prices. This project uses a Long Short-Term Memory (LSTM) network using PyTorch and compares various evaluation metrics with baseline models such as Logistic Regression, SVM, and Random Forest from Scikit-learn.
+The goal of this project is to develop and evaluate machine learning models to predict the direction (up or down) of daily stock prices. This project uses a Long Short-Term Memory (LSTM) network using PyTorch and compares various evaluation metrics with baseline models (Logistic Regression, SVM, Random Forest) from Scikit-learn.
 
 ### Project Structure (after running both notebooks)
 
@@ -61,5 +61,6 @@ pip install -r requirements.txt
 5. Run Jupyter Notebooks:
 
 - Start Jupyter: `jupyter lab`
-- Run `notebooks/1_data_cleaning.ipynb`: Preprocesses raw stock data and generates `train.csv`, `val.csv`, and `test.csv`
+- Run `notebooks/1_data_cleaning.ipynb`: Preprocesses raw stock data and generates `train.csv`, `val.csv`, and `test.csv` in `data/processed`
 - Run `notebooks/2_baseline_and_lstm_models.ipynb`: Takes those .csv files and trains baseline and LSTM models
+- After running, `metrics` and `figures`, comparing all four models, should be found in `outputs`
